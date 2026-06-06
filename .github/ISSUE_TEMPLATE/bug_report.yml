@@ -1,0 +1,62 @@
+name: Bug report
+description: Report something in Ziraph that's broken or behaving incorrectly
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug - it genuinely helps.
+
+        Just need help, or have a "how do I…" question? Please use
+        [Discussions → Q&A](https://github.com/orgs/ziraph/discussions/categories/q-a)
+        instead. This form is for things that look broken.
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: What happened, and what did you expect instead?
+      placeholder: e.g. ANE power reads 0 W during an Ollama run, but the model is clearly on the GPU - I expected non-zero GPU power.
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Your Mac
+      description: Model and chip - the chip matters a lot for profiling.
+      placeholder: e.g. MacBook Air M1, 16 GB
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Ziraph version (`ziraph --version`) and your macOS version.
+      placeholder: e.g. ziraph v0.1.0-dev.20260605, macOS 26.1
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The exact command you ran (runner + model) and the steps to trigger it.
+      placeholder: |
+        1. ziraph run -- ollama run gemma:12b "hello"
+        2. Read the summary / watched the live view
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output or report bundle (optional, but very helpful)
+      description: Paste the relevant output, or drag in a `ziraph report` bundle - that's the actual measurement and answers most questions on its own.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions for the same problem
+          required: false

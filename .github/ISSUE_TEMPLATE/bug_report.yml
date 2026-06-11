@@ -41,7 +41,7 @@ body:
       label: How to reproduce
       description: The exact command you ran (runner + model) and the steps to trigger it.
       placeholder: |
-        1. ziraph run -- ollama run gemma:12b "hello"
+        1. ziraph trace -- ollama run gemma:12b "hello"
         2. Read the summary / watched the live view
         3. ...
     validations:

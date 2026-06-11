@@ -7,7 +7,7 @@ Pick the channel that fits what you need:
 ## 💬 [Discussions](https://github.com/ziraph/support/discussions) - questions and conversation
 
 - **[Q&A](https://github.com/ziraph/support/discussions/categories/q-a)** - stuck, or not sure whether it is a bug? Ask here.
-- **[General](https://github.com/ziraph/support/discussions/categories/general)** - share a run, compare results, or talk about local AI on Apple Silicon.
+- **[General](https://github.com/ziraph/support/discussions/categories/general)** - share a trace, compare results, or talk about local AI on Apple Silicon.
 - **[Announcements](https://github.com/ziraph/support/discussions/categories/announcements)** - releases and news.
 
 ## 🐛 [Issues](https://github.com/ziraph/support/issues) - bugs and feature requests
